@@ -5,7 +5,7 @@
 :root {
   --mainColor: #545454;
   --secondaryColor: #231f20;
-  --transparentBlack: #000000c2;
+  --transparentBlack: #000000bd;
   --lightGray: #bfbfbf;
   --black: #000000;
   --white: #ffffff;
@@ -31,8 +31,8 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--mainColor);
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 ul {
   list-style: none;
@@ -55,4 +55,199 @@ input {
 }
 button {
   cursor: pointer;
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/* Small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Medium */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/* Large */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+/* X-Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+/* XX-Large */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+/* ===== Header ===== */
+header {
+  height: calc(75vh + 76px);
+  position: relative;
+  background: url(../img/header.jpg) center center / cover no-repeat #b3b3b3;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header nav .logo img {
+  width: 180px;
+}
+header nav .links {
+  display: none;
+}
+header nav .links::before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom-color: #ccc;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+header nav .links li a {
+  padding: 20px 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+header nav .links li a:hover {
+  border-radius: 30px;
+  background-color: #ffffff79;
+}
+header nav .toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 35px;
+  cursor: pointer;
+}
+header nav .toggle:hover + .links,
+header nav .links:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  padding: 20px 0;
+  z-index: 4;
+  box-shadow: 0 0 5px 0 #0000002f;
+}
+header nav .toggle span {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+header .main-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+header .main-header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-bottom: 40px;
+  position: relative;
+}
+header .main-header p::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--black);
+}
+header .main-header h1 {
+  margin: 50px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  header .main-header h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 575px) {
+  header .main-header h1 {
+    font-size: 2rem;
+  }
+}
+header .main-header a {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 50px;
+  border: 2px solid var(--black);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+header .main-header a:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+/* ===== Download ===== */
+.download {
+  background-color: var(--black);
+}
+.download .container {
+  height: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.download p {
+  flex-basis: 50%;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .download .container {
+    flex-direction: column;
+  }
+  .download .container p {
+    text-align: center;
+  }
+}
+.download a {
+  text-transform: uppercase;
+  background-color: var(--white);
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--black);
+  transition: 0.3s;
+}
+.download a:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
 }
