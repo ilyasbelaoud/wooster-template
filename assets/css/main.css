@@ -1,0 +1,58 @@
+/* ======= Google Fonts ======= */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"); */
+/* ======= Variables ======= */
+:root {
+  --mainColor: #545454;
+  --secondaryColor: #231f20;
+  --transparentBlack: #000000c2;
+  --lightGray: #bfbfbf;
+  --black: #000000;
+  --white: #ffffff;
+  --sectionPadding: 60px;
+}
+/* ======= Global Rules ======= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+}
+a,
+a:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
