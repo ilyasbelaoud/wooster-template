@@ -564,3 +564,69 @@ header .main-header h1 {
   word-spacing: 2px;
   line-height: 1.5;
 }
+/* ===== Subscribe ===== */
+.subscribe {
+  padding: var(--sectionPadding) 0;
+  background-color: var(--black);
+}
+.subscribe .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.subscribe .wrapper h3 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+}
+.subscribe .wrapper form {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.subscribe .wrapper form .icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+.subscribe .wrapper form input[type="email"] {
+  background: none;
+  border: 1px solid var(--white);
+  padding: 15px 60px;
+  color: var(--white);
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.subscribe .wrapper form input[type="submit"] {
+  padding: 15px 50px;
+  color: var(--black);
+  border: 1px solid var(--white);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.subscribe .wrapper form input[type="submit"]:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .subscribe .wrapper {
+    text-align: center;
+  }
+  .subscribe .wrapper form {
+    flex-direction: column;
+    gap: 0;
+  }
+  .subscribe .wrapper form input[type="email"] {
+    border-bottom: none;
+  }
+  .subscribe .wrapper form .icon {
+    top: 25%;
+  }
+}
