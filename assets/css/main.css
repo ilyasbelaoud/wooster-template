@@ -166,13 +166,13 @@ header nav .links {
 header nav .links::before {
   content: "";
   border: 15px solid transparent;
-  border-bottom-color: #ccc;
+  border-bottom-color: #eee;
   position: absolute;
   top: -30px;
   right: 0;
 }
 header nav .links li a {
-  padding: 20px 40px;
+  padding: 20px 50px;
   margin: 0 auto;
   text-align: center;
   font-weight: 500;
@@ -180,7 +180,7 @@ header nav .links li a {
 }
 header nav .links li a:hover {
   border-radius: 30px;
-  background-color: #ffffff79;
+  background-color: #ffffffdc;
 }
 header nav .toggle {
   display: flex;
@@ -198,10 +198,10 @@ header nav .links:hover {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #ccc;
+  background-color: #eee;
   padding: 20px 0;
   z-index: 4;
-  box-shadow: 0 0 5px 0 #0000002f;
+  box-shadow: 0 0 20px 0 #0000002f;
 }
 header nav .toggle span {
   width: 100%;
@@ -629,4 +629,11 @@ header .main-header h1 {
   .subscribe .wrapper form .icon {
     top: 25%;
   }
+}
+/* ===== Contact ===== */
+.contact {
+  padding: var(--sectionPadding) 0;
+}
+.contact .info {
+  display: flex;
 }
