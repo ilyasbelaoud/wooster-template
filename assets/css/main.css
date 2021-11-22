@@ -344,7 +344,7 @@ header .main-header h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--transparentBlack);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .video .container {
   position: relative;
@@ -442,7 +442,7 @@ header .main-header h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--transparentBlack);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .quote .wrapper {
   max-width: 600px;
@@ -478,4 +478,89 @@ header .main-header h1 {
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+/* ===== About ===== */
+.about {
+  padding: var(--sectionPadding) 0;
+}
+.about .team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+  margin-bottom: 60px;
+}
+.about .team-wrapper .image {
+  flex-basis: calc((100% - 90px) / 4);
+  position: relative;
+  transition: all 0.5s;
+}
+.about .team-wrapper .image::after {
+  content: "John Stephenson";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--transparentBlack);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about .team-wrapper .image img {
+  display: flex;
+}
+.about .team-wrapper .image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 0 #00000056;
+}
+@media (max-width: 991px) {
+  .about .team-wrapper .image {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .about .team-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.about .text-wrapper .text {
+  flex-basis: calc((100% - 100px) / 3);
+}
+@media (max-width: 991px) {
+  .about .text-wrapper .text {
+    flex-basis: calc((100% - 50px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .about .text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .text-wrapper .text {
+    text-align: center;
+  }
+}
+.about .text-wrapper .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.about .text-wrapper .text p {
+  margin: 30px 0 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--mainColor);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.5;
 }
