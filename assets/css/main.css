@@ -719,6 +719,7 @@ header .main-header h1 {
 .contact form textarea {
   grid-area: message;
   min-height: 185px;
+  resize: none;
 }
 .contact form input[type="submit"] {
   grid-area: submit;
