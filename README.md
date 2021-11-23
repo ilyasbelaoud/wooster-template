@@ -12,8 +12,6 @@
   - [Icons](#icons)
 - [Author](#author)
 - [Preview](#preview)
-  - [Desktop](#desktop)
-  - [Mobile](#mobile)
 
 ## Links
 
@@ -48,10 +46,4 @@
 
 ## Preview
 
-### Desktop
-
 ![Desktop Preview](/desktop-preview.png)
-
-### Mobile
-
-![Mobile Preview](/mobile-preview.png)
