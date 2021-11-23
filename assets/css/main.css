@@ -42,7 +42,6 @@ a:visited {
   display: block;
   text-decoration: none;
   color: black;
-  cursor: pointer;
 }
 img {
   max-width: 100%;
@@ -101,6 +100,7 @@ a.button {
   font-size: 0.8rem;
   text-transform: uppercase;
   transition: 0.3s;
+  cursor: pointer;
 }
 a.button:hover {
   color: var(--white);
@@ -156,9 +156,13 @@ header nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 10px 0;
+}
+header nav .logo {
+  display: flex;
 }
 header nav .logo img {
-  width: 180px;
+  width: 160px;
 }
 header nav .links {
   display: none;
@@ -241,12 +245,12 @@ header .main-header h1 {
 }
 @media (max-width: 767px) {
   header .main-header h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 }
 @media (max-width: 575px) {
   header .main-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 /* ===== Download ===== */
@@ -302,21 +306,10 @@ header .main-header h1 {
   padding: 50px 50px 50px 0;
   align-self: center;
 }
-@media (max-width: 767px) {
-  .our-beginning .container {
-    flex-direction: column;
-  }
-  .our-beginning .image {
-    order: -1;
-    margin-top: 50px;
-  }
-  .our-beginning .text {
-    padding: 50px 20px;
-  }
-}
 .our-beginning .text .section-heading {
   text-align: left;
 }
+
 .our-beginning .text .section-heading .short::after {
   width: 40px;
   left: 0;
@@ -330,6 +323,28 @@ header .main-header h1 {
 }
 .our-beginning .image img {
   height: 100%;
+}
+@media (max-width: 767px) {
+  .our-beginning .container {
+    flex-direction: column;
+  }
+  .our-beginning .image {
+    order: -1;
+    margin-top: 50px;
+  }
+  .our-beginning .text {
+    padding: 50px 20px;
+  }
+  .our-beginning .text .section-heading {
+    text-align: center;
+  }
+  .our-beginning .text .section-heading .short::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .our-beginning .text a {
+    margin: 0 auto;
+  }
 }
 /* ===== Video ===== */
 .video {
@@ -719,4 +734,34 @@ header .main-header h1 {
 .contact form input[type="submit"]:hover {
   background-color: var(--white);
   color: var(--black);
+}
+/* ===== Footer ===== */
+footer {
+  padding: var(--sectionPadding) 0;
+  background-color: var(--black);
+  text-align: center;
+}
+footer .logo {
+  width: fit-content;
+  margin: 0 auto;
+}
+footer .logo img {
+  width: 60px;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+footer .social li a i {
+  color: var(--white);
+  font-size: 17px;
+}
+footer .copyright {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
