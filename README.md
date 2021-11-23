@@ -46,4 +46,4 @@
 
 ## Preview
 
-![Desktop Preview](/desktop-preview.png)
+![Desktop Preview](/assets/preview/desktop-preview.png)
