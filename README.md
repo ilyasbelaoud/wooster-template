@@ -12,6 +12,8 @@
   - [Icons](#icons)
 - [Author](#author)
 - [Preview](#preview)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
 
 ## Links
 
@@ -33,7 +35,7 @@
 ### Images
 
 - Unsplash - [Unsplash](https://unsplash.com/)
-- DesignSpiration - [Unsplash](http://designspiration.net/)
+- DesignSpiration - [DesignSpiration](http://designspiration.net/)
 
 ### Icons
 
@@ -46,5 +48,10 @@
 
 ## Preview
 
+### Desktop
+
 ![Desktop Preview](/desktop-preview.png)
+
+### Mobile
+
 ![Mobile Preview](/mobile-preview.png)
